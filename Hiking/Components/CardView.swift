@@ -16,10 +16,21 @@ struct CardView: View {
                 
                 VStack(alignment: .leading){
                     
-                    Text("Hiking")
-                        .font(.system(size: 52))
-                        .fontWeight(.bold)
+                    HStack {
+                        Text("Hiking")
+                            .font(.system(size: 52))
+                            .fontWeight(.bold)
                         .foregroundStyle(LinearGradient(colors: [.customColorGrayLight, .customColorGrayMedium], startPoint: .top, endPoint: .bottom))
+                        
+                        Spacer()
+                        
+                        Button {
+                            print("Boton presionado")
+                        } label: {
+                            CustomButtonView()
+                        }
+                      
+                    }
                     
                     Text("Have fun and enjoy outdoor activities with friends and family.")
                         .multilineTextAlignment(.leading)
