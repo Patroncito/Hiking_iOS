@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C0CFCBB2B476089007E2315 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0CFCBA2B476089007E2315 /* ColorExtension.swift */; };
 		8C82A5F32B4694EB00CB7F13 /* HikingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C82A5F22B4694EB00CB7F13 /* HikingApp.swift */; };
 		8C82A5F52B4694EB00CB7F13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C82A5F42B4694EB00CB7F13 /* ContentView.swift */; };
 		8C82A5F72B4694EC00CB7F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82A5F62B4694EC00CB7F13 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C0CFCBA2B476089007E2315 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		8C82A5EF2B4694EB00CB7F13 /* Hiking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hiking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C82A5F22B4694EB00CB7F13 /* HikingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingApp.swift; sourceTree = "<group>"; };
 		8C82A5F42B4694EB00CB7F13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +34,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C0CFCB82B476062007E2315 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8C0CFCB92B476076007E2315 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8C0CFCBA2B476089007E2315 /* ColorExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		8C82A5E62B4694EB00CB7F13 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +68,8 @@
 		8C82A5F12B4694EB00CB7F13 /* Hiking */ = {
 			isa = PBXGroup;
 			children = (
+				8C0CFCB92B476076007E2315 /* Utility */,
+				8C0CFCB82B476062007E2315 /* Components */,
 				8C82A5F22B4694EB00CB7F13 /* HikingApp.swift */,
 				8C82A5F42B4694EB00CB7F13 /* ContentView.swift */,
 				8C82A5F62B4694EC00CB7F13 /* Assets.xcassets */,
@@ -137,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C0CFCBB2B476089007E2315 /* ColorExtension.swift in Sources */,
 				8C82A5F52B4694EB00CB7F13 /* ContentView.swift in Sources */,
 				8C82A5F32B4694EB00CB7F13 /* HikingApp.swift in Sources */,
 			);
