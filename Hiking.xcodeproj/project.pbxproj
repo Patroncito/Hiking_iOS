@@ -86,9 +86,9 @@
 		8C82A5F12B4694EB00CB7F13 /* Hiking */ = {
 			isa = PBXGroup;
 			children = (
-				8C0CFCB92B476076007E2315 /* Utility */,
 				8C82A5F22B4694EB00CB7F13 /* HikingApp.swift */,
 				8C82A5F42B4694EB00CB7F13 /* ContentView.swift */,
+				8C0CFCB92B476076007E2315 /* Utility */,
 				8C0CFCB82B476062007E2315 /* Components */,
 				8C82A5F62B4694EC00CB7F13 /* Assets.xcassets */,
 				8C82A5F82B4694EC00CB7F13 /* Preview Content */,

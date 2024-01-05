@@ -16,7 +16,6 @@ struct CustomCircleView: View {
         ZStack {
             Circle()
                 .fill(LinearGradient(colors: [
-                    .pink,
                     Color(Color.colorIndigoMedium),
                     Color(Color.colorSalmonLight)],
                     startPoint: isAnimateGradient ? .topLeading :.bottomLeading,
@@ -33,8 +32,9 @@ struct CustomCircleView: View {
                     
             }
             MotionAnimationView()
+                .frame(width: 256, height: 256)
+
         }
-        .frame(width: 256, height: 256)
     }
 }
 
