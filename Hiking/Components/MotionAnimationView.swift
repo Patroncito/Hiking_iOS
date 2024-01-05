@@ -31,7 +31,17 @@ struct MotionAnimationView: View {
     }
     
 //    RANDOM SPEED
+    
+    func randomSpeed () -> Double {
+        return Double.random(in: 0.05...1.0)
+    }
 //    RANDOM DELAY
+    
+    func randomDelay() -> Double {
+        return Double.random(in: 0...2)
+    }
+    
+    
     var body: some View {
         
         ZStack {
@@ -53,6 +63,8 @@ struct MotionAnimationView: View {
                 withAnimation(.interpolatingSpring(stiffness: 0.25, damping: 0.25)
                 
                     .repeatForever()
+                    .speed(randomSpeed())
+                    .delay(randomDelay())
                 )
                 {
                     isAnimate = true
