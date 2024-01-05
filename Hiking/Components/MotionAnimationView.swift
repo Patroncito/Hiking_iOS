@@ -11,7 +11,8 @@ struct MotionAnimationView: View {
     
     
     @State private var randomCircle : Int = Int.random(in: 6...12)
-    
+    @State private var isAnimate : Bool = false
+
     //MARK: FUNCTIONS
     // RANDOM COORDINATES
     
@@ -25,6 +26,10 @@ struct MotionAnimationView: View {
     }
 //    RANDOM SCALE
     
+    func randomScale () -> CGFloat {
+        return CGFloat(Double.random(in: 0.1...2.0))
+    }
+    
 //    RANDOM SPEED
 //    RANDOM DELAY
     var body: some View {
@@ -37,8 +42,23 @@ struct MotionAnimationView: View {
                     .frame(width: randomSize())
                     .position(
                         x: randomCoordinates(),
-                        y: randomCoordinates())
+                        y: randomCoordinates()
+                    )
+                    .scaleEffect(isAnimate ? randomScale() : 1)
+                
+                
             }
+            
+            .onAppear(perform: {
+                withAnimation(.interpolatingSpring(stiffness: 0.25, damping: 0.25)
+                
+                    .repeatForever()
+                )
+                {
+                    isAnimate = true
+                }
+            })
+        
         }
         .frame(width: 256, height: 256)
 
