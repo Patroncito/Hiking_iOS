@@ -49,6 +49,19 @@ struct CardView: View {
                         .resizable()
                         .scaledToFit()
                 }
+                
+                Button{
+                    // Random number
+                    print("Random number")
+                } label: {
+                    Text("Explore More")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(LinearGradient(colors: [.colorGreenLight, .colorGreenMedium], startPoint: .top, endPoint: .bottom))
+                        .shadow(color: .black.opacity(0.30), radius: 0.25, x: 1, y: 2)
+                }
+                .buttonStyle(GradientButtonStyle())
+                
             }
         }
         .frame(width: 320, height: 570)
