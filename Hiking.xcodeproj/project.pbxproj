@@ -15,6 +15,7 @@
 		8C82A5F52B4694EB00CB7F13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C82A5F42B4694EB00CB7F13 /* ContentView.swift */; };
 		8C82A5F72B4694EC00CB7F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82A5F62B4694EC00CB7F13 /* Assets.xcassets */; };
 		8C82A5FA2B4694EC00CB7F13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82A5F92B4694EC00CB7F13 /* Preview Assets.xcassets */; };
+		8CE5B7562B47812500F7106C /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE5B7552B47812500F7106C /* GradientButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8C82A5F42B4694EB00CB7F13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C82A5F62B4694EC00CB7F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C82A5F92B4694EC00CB7F13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CE5B7552B47812500F7106C /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				8C0CFCBA2B476089007E2315 /* ColorExtension.swift */,
+				8CE5B7552B47812500F7106C /* GradientButtonStyle.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				8C0CFCBB2B476089007E2315 /* ColorExtension.swift in Sources */,
 				8C82A5F52B4694EB00CB7F13 /* ContentView.swift in Sources */,
 				8C0CFCC12B47714F007E2315 /* CustomButtonView.swift in Sources */,
+				8CE5B7562B47812500F7106C /* GradientButtonStyle.swift in Sources */,
 				8C0CFCBD2B47631D007E2315 /* CardView.swift in Sources */,
 				8C82A5F32B4694EB00CB7F13 /* HikingApp.swift in Sources */,
 			);
