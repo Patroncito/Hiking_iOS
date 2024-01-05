@@ -18,9 +18,13 @@ struct CardView: View {
     //MARK: FUNCTIONS
     
     func randomImage () {
-        randomNumber = Int.random(in: 1...5)
+        repeat {
+            randomNumber = Int.random(in: 1...5)
+        } while randomNumber == imageNumber
+        
         imageNumber = randomNumber
     }
+    
     
     var body: some View {
         
@@ -64,6 +68,7 @@ struct CardView: View {
                     Image("image-\(imageNumber)")
                         .resizable()
                         .scaledToFit()
+                        .animation(.easeInOut(duration: 0.7), value: imageNumber)
                 }
                 
                 Button{
