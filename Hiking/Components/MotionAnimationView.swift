@@ -11,7 +11,8 @@ struct MotionAnimationView: View {
     
     
     @State private var randomCircle : Int = Int.random(in: 6...12)
-    
+    @State private var isAnimate : Bool = false
+
     //MARK: FUNCTIONS
     // RANDOM COORDINATES
     
@@ -25,8 +26,22 @@ struct MotionAnimationView: View {
     }
 //    RANDOM SCALE
     
+    func randomScale () -> CGFloat {
+        return CGFloat(Double.random(in: 0.1...2.0))
+    }
+    
 //    RANDOM SPEED
+    
+    func randomSpeed () -> Double {
+        return Double.random(in: 0.05...1.0)
+    }
 //    RANDOM DELAY
+    
+    func randomDelay() -> Double {
+        return Double.random(in: 0...2)
+    }
+    
+    
     var body: some View {
         
         ZStack {
@@ -37,19 +52,40 @@ struct MotionAnimationView: View {
                     .frame(width: randomSize())
                     .position(
                         x: randomCoordinates(),
-                        y: randomCoordinates())
+                        y: randomCoordinates()
+                    )
+                    .scaleEffect(isAnimate ? randomScale() : 1)
+                
+                
             }
+            
+            .onAppear(perform: {
+                withAnimation(.interpolatingSpring(stiffness: 0.25, damping: 0.25)
+                
+                    .repeatForever()
+                    .speed(randomSpeed())
+                    .delay(randomDelay())
+                )
+                {
+                    isAnimate = true
+                }
+            })
+        
         }
         .frame(width: 256, height: 256)
+        .mask(Circle())
+        .drawingGroup()
 
         
     }
 }
 
 #Preview {
-    ZStack {
-        Color.teal.edgesIgnoringSafeArea(.all)
-        MotionAnimationView()
-
-    }
+    MotionAnimationView()
+        .background(
+            Circle()
+                .fill(.teal)
+        
+        )
+    
 }
