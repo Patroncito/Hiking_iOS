@@ -9,13 +9,22 @@ import SwiftUI
 
 struct SettingsView: View {
     
-  
+    private var alternatedIcons : [String] =
+    ["AppIcon-Backpack",
+     "AppIcon-Camera",
+     "AppIcon-Campfire",
+     "AppIcon-MagnifyingGlass",
+     "AppIcon-Map",
+     "AppIcon-Mushroom"
+    ]
+
 
 
 
     var body: some View {
         
         List {
+            //MARK: ICON AND APP DESCRIPTION
             Section{
                 HStack{
                     Spacer()
@@ -55,6 +64,47 @@ struct SettingsView: View {
             }
             .listRowSeparator(.hidden)
             
+            
+            //MARK: ICON ALTERNATIVE SECTION
+            
+            Section(header: Text("Change app icon")){
+                ScrollView(.horizontal, showsIndicators: false){
+                    HStack(spacing: 12) {
+                        
+                        ForEach(alternatedIcons.indices, id: \.self) { item in
+                            
+                            Button {
+                                print("Presione el button")
+                            } label: {
+                                Image("\(alternatedIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .clipShape(RoundedRectangle(cornerRadius: 16))
+                                
+                            }
+                        }
+                        
+                    }
+                   
+                } .padding(.top, 12)
+                
+                .listRowSeparator(.hidden)
+                
+                Text("Choose your favourite app icon from the collection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+                
+                    
+                //                    RoundedRectangle(cornerRadius: 8)
+
+            }
+            
+            
+            //MARK: ABOUT THE APP SECTION
             Section(
                 header: Text("ABOUT THE APP"),
                 footer: HStack {
