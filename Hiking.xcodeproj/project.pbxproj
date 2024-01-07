@@ -17,6 +17,7 @@
 		8C82A5FA2B4694EC00CB7F13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C82A5F92B4694EC00CB7F13 /* Preview Assets.xcassets */; };
 		8C99E5372B47C84700C09FF1 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99E5362B47C84700C09FF1 /* MotionAnimationView.swift */; };
 		8C99E53A2B47D7FE00C09FF1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99E5392B47D7FE00C09FF1 /* SettingsView.swift */; };
+		8C99E53C2B47F21200C09FF1 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99E53B2B47F21200C09FF1 /* CustomListRowView.swift */; };
 		8CE5B7562B47812500F7106C /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE5B7552B47812500F7106C /* GradientButtonStyle.swift */; };
 		8CE5B7582B478AAB00F7106C /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE5B7572B478AAB00F7106C /* CustomCircleView.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		8C82A5F92B4694EC00CB7F13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C99E5362B47C84700C09FF1 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
 		8C99E5392B47D7FE00C09FF1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8C99E53B2B47F21200C09FF1 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 		8CE5B7552B47812500F7106C /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		8CE5B7572B478AAB00F7106C /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +58,7 @@
 				8C0CFCC02B47714F007E2315 /* CustomButtonView.swift */,
 				8CE5B7572B478AAB00F7106C /* CustomCircleView.swift */,
 				8C99E5362B47C84700C09FF1 /* MotionAnimationView.swift */,
+				8C99E53B2B47F21200C09FF1 /* CustomListRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				8C0CFCBF2B476338007E2315 /* CustomBackgroundView.swift in Sources */,
 				8CE5B7582B478AAB00F7106C /* CustomCircleView.swift in Sources */,
+				8C99E53C2B47F21200C09FF1 /* CustomListRowView.swift in Sources */,
 				8C0CFCBB2B476089007E2315 /* ColorExtension.swift in Sources */,
 				8C82A5F52B4694EB00CB7F13 /* ContentView.swift in Sources */,
 				8C0CFCC12B47714F007E2315 /* CustomButtonView.swift in Sources */,

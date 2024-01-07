@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+  
+
+
+
     var body: some View {
         
         List {
@@ -49,6 +54,30 @@ struct SettingsView: View {
                 .padding(.bottom, 16)
             }
             .listRowSeparator(.hidden)
+            
+            Section(
+                header: Text("ABOUT THE APP"),
+                footer: HStack {
+                    Spacer()
+                    Text("Copyright © All right reserved")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            
+            ){
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowTintColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compability", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .red)
+                
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
+
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Alfonso Patron", rowTintColor: .orange)
+                
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe",  rowTintColor: .indigo, rowLinkLabel: "Patromy", rowLinkDestination: "https://www.linkedin.com/in/alfonsopatron/")
+
+            }
             
         }
     }
